@@ -1,0 +1,99 @@
+@use "componant";
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-family: "Barlow", sans-serif;
+  font-family: "Comforter Brush", cursive;
+  font-family: "Open Sans", sans-serif;
+  overflow-x: hidden;
+}
+
+nav {
+  ul {
+    gap: 1.3rem;
+  }
+  @media (max-width: 767px) {
+    ul {
+      padding-top: 20%;
+      gap: 0px !important;
+      position: absolute;
+      background-color: white;
+      flex-direction: column;
+      top: 0;
+      left: 100%;
+      width: 100%;
+      height: 100%;
+      transition: 0.3s;
+      &.active {
+        left: 0;
+      }
+      li {
+        a {
+          color: black !important;
+          padding: 30px;
+        }
+        width: 100%;
+        margin: 0;
+        transition: 0.3s;
+        &:hover {
+          background-color: wheat;
+        }
+      }
+    }
+    .show-nav {
+      z-index: 4;
+      position: relative;
+    }
+  }
+}
+
+// start landing
+
+.landing {
+  .image {
+    width: 80%;
+  }
+  .back-image {
+    // background-color: blue;
+    height: 100%;
+    width: 80%;
+    display: block;
+    position: absolute;
+    top: 50px;
+    right: 0;
+    background-image: url("/images/plus.png");
+    background-repeat: repeat;
+    background-size: 40px;
+    z-index: -1;
+  }
+  .flow-1 {
+    border: 1px solid #473f3c;
+    max-width: 300px;
+    top: 5%;
+    right: 0;
+    .icon {
+      background-color: #ee9888;
+      height: 35px;
+      width: 35px;
+      i {
+        color: #b35941;
+      }
+    }
+    h4 {
+      color: #473f3c;
+    }
+  }
+  .flow-2 {
+    bottom: -40px;
+    left: -40px;
+    width: 250px;
+    border: 1px solid #473f3c;
+    h4 {
+      font-size: 4rem;
+    }
+  }
+}

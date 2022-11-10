@@ -1,0 +1,125 @@
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.main-color {
+  color: #473f3c;
+}
+
+.main-bg {
+  background-color: #473f3c;
+}
+
+.main-border {
+  border-color: #473f3c;
+}
+
+.main-font {
+  font-family: "Barlow", sans-serif;
+  font-family: "Comforter Brush", cursive;
+  font-family: "Gochi Hand", cursive;
+  font-family: "Handlee", cursive;
+  font-family: "Open Sans", sans-serif;
+  font-family: "Patrick Hand SC", cursive;
+  font-family: "Playfair Display", serif;
+}
+
+.nor-font {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.rem-4 {
+  font-size: 4rem;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Barlow", sans-serif;
+  font-family: "Comforter Brush", cursive;
+  font-family: "Open Sans", sans-serif;
+  overflow-x: hidden;
+}
+
+nav ul {
+  gap: 1.3rem;
+}
+@media (max-width: 767px) {
+  nav ul {
+    padding-top: 20%;
+    gap: 0px !important;
+    position: absolute;
+    background-color: white;
+    flex-direction: column;
+    top: 0;
+    left: 100%;
+    width: 100%;
+    height: 100%;
+    transition: 0.3s;
+  }
+  nav ul.active {
+    left: 0;
+  }
+  nav ul li {
+    width: 100%;
+    margin: 0;
+    transition: 0.3s;
+  }
+  nav ul li a {
+    color: black !important;
+    padding: 30px;
+  }
+  nav ul li:hover {
+    background-color: wheat;
+  }
+  nav .show-nav {
+    z-index: 4;
+    position: relative;
+  }
+}
+
+.landing .image {
+  width: 80%;
+}
+.landing .back-image {
+  height: 100%;
+  width: 80%;
+  display: block;
+  position: absolute;
+  top: 50px;
+  right: 0;
+  background-image: url("/images/plus.png");
+  background-repeat: repeat;
+  background-size: 40px;
+  z-index: -1;
+}
+.landing .flow-1 {
+  border: 1px solid #473f3c;
+  max-width: 300px;
+  top: 5%;
+  right: 0;
+}
+.landing .flow-1 .icon {
+  background-color: #ee9888;
+  height: 35px;
+  width: 35px;
+}
+.landing .flow-1 .icon i {
+  color: #b35941;
+}
+.landing .flow-1 h4 {
+  color: #473f3c;
+}
+.landing .flow-2 {
+  bottom: -40px;
+  left: -40px;
+  width: 250px;
+  border: 1px solid #473f3c;
+}
+.landing .flow-2 h4 {
+  font-size: 4rem;
+}/*# sourceMappingURL=style.css.map */
