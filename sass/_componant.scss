@@ -36,3 +36,20 @@
 .rem-4 {
   font-size: 4rem;
 }
+
+.fill-btn {
+  transition: 0.3s;
+  &:hover {
+    color: white;
+    background-color: #473f3c;
+  }
+}
+
+.fill-btn-out {
+  transition: 0.3s;
+  &:hover {
+    color: #473f3c !important;
+    background-color: white;
+    border: 1px solid #473f3c;
+  }
+}

@@ -40,6 +40,23 @@
   font-size: 4rem;
 }
 
+.fill-btn {
+  transition: 0.3s;
+}
+.fill-btn:hover {
+  color: white;
+  background-color: #473f3c;
+}
+
+.fill-btn-out {
+  transition: 0.3s;
+}
+.fill-btn-out:hover {
+  color: #473f3c !important;
+  background-color: white;
+  border: 1px solid #473f3c;
+}
+
 * {
   box-sizing: border-box;
   padding: 0;
@@ -53,6 +70,9 @@ body {
   overflow-x: hidden;
 }
 
+nav .logo {
+  z-index: 9;
+}
 nav ul {
   gap: 1.3rem;
   z-index: 6;
@@ -64,14 +84,16 @@ nav ul {
     position: absolute;
     background-color: white;
     flex-direction: column;
-    top: 0;
-    left: 100%;
+    top: 100%;
+    left: 0;
     width: 100%;
     height: 100%;
     transition: 0.3s;
+    opacity: 0;
   }
   nav ul.active {
-    left: 0;
+    top: 0;
+    opacity: 1;
   }
   nav ul li {
     width: 100%;
@@ -98,6 +120,11 @@ nav ul {
 }
 .landing .image {
   width: 80%;
+  filter: grayscale(1);
+  transition: 0.6s;
+}
+.landing .image:hover {
+  filter: grayscale(0);
 }
 .landing .back-image {
   height: 100%;
@@ -106,9 +133,9 @@ nav ul {
   position: absolute;
   top: 50px;
   right: 0;
-  background-image: url("/images/plus.png");
+  background-image: url("/images/domin.png");
   background-repeat: repeat;
-  background-size: 40px;
+  background-size: 20px;
   z-index: -1;
 }
 .landing .flow-1 {
@@ -159,4 +186,49 @@ nav ul {
 }
 .businesses .box img {
   width: 30%;
+}
+
+@media (max-width: 767px) {
+  .overview h1 {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .features h1 {
+    font-size: 2rem;
+  }
+}
+
+.about {
+  background-color: #efece3;
+}
+.about .image {
+  height: 150px;
+  width: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media (max-width: 767px) {
+  .about p {
+    font-size: 15px !important;
+  }
+}
+
+.footer .row {
+  padding-top: 100px !important;
+}
+.footer li {
+  margin-bottom: 5px;
+}
+.footer .the-link {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+@media (max-width: 767px) {
+  .footer h1 {
+    font-size: 15px !important;
+  }
 }/*# sourceMappingURL=style.css.map */
