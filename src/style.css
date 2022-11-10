@@ -11,7 +11,15 @@
 }
 
 .main-border {
-  border-color: #473f3c;
+  border: 1px solid #473f3c;
+}
+
+.green-color {
+  color: #00434e;
+}
+
+.green-bg {
+  background-color: #00434e;
 }
 
 .main-font {
@@ -47,6 +55,7 @@ body {
 
 nav ul {
   gap: 1.3rem;
+  z-index: 6;
 }
 @media (max-width: 767px) {
   nav ul {
@@ -77,11 +86,16 @@ nav ul {
     background-color: wheat;
   }
   nav .show-nav {
-    z-index: 4;
+    z-index: 9;
     position: relative;
   }
 }
 
+@media (max-width: 991px) {
+  .landing .main-heading {
+    font-size: 2.5rem;
+  }
+}
 .landing .image {
   width: 80%;
 }
@@ -122,4 +136,27 @@ nav ul {
 }
 .landing .flow-2 h4 {
   font-size: 4rem;
+}
+
+.leading {
+  background-color: #efece3;
+}
+.leading img {
+  filter: grayscale(1);
+}
+
+.businesses {
+  background-color: #efece3;
+}
+@media (max-width: 767px) {
+  .businesses .h1 {
+    font-size: 2rem;
+    padding-left: 25px;
+  }
+}
+.businesses .box {
+  width: 90%;
+}
+.businesses .box img {
+  width: 30%;
 }/*# sourceMappingURL=style.css.map */

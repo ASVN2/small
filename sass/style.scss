@@ -15,6 +15,7 @@ body {
 nav {
   ul {
     gap: 1.3rem;
+    z-index: 6;
   }
   @media (max-width: 767px) {
     ul {
@@ -45,7 +46,7 @@ nav {
       }
     }
     .show-nav {
-      z-index: 4;
+      z-index: 9;
       position: relative;
     }
   }
@@ -54,6 +55,13 @@ nav {
 // start landing
 
 .landing {
+  .main-heading {
+    @media (max-width: 991px) {
+      & {
+        font-size: 2.5rem;
+      }
+    }
+  }
   .image {
     width: 80%;
   }
@@ -94,6 +102,34 @@ nav {
     border: 1px solid #473f3c;
     h4 {
       font-size: 4rem;
+    }
+  }
+}
+
+// start leading
+.leading {
+  background-color: #efece3;
+  img {
+    filter: grayscale(1);
+  }
+}
+
+// start businesses
+
+.businesses {
+  background-color: #efece3;
+  .h1 {
+    @media (max-width: 767px) {
+      & {
+        font-size: 2rem;
+        padding-left: 25px;
+      }
+    }
+  }
+  .box {
+    width: 90%;
+    img {
+      width: 30%;
     }
   }
 }
